@@ -1,7 +1,7 @@
 body {
     font-family: "Calibri", sans-serif
 }
-
+/* No borders in Internet Explorer, sorry...*/
 table {
     min-width: 550px;
     border-collapse: collapse;
@@ -35,7 +35,7 @@ tr:nth-child(2n) {
 
 .flags {
     width: 1.5em;
-    length: 1em;
+    height: 0.9em;
     vertical-align: middle
 }
 

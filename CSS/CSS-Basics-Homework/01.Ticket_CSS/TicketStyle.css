@@ -6,7 +6,7 @@ body {
 
 header {
     font-size: 1.4em;
-    font-family: "Tahoma";
+    font-family: "Tahoma", sans-serif;
     line-height: 200%;
     font-weight: 100
 }
@@ -38,7 +38,7 @@ td:first-of-type {
     border-radius: 50%;
     width: 0.6em;
     height: 0.6em;
-   border:1px solid #72B47B;
+    border:1px solid #72B47B;
     background-color:#72B47B
 }
 
