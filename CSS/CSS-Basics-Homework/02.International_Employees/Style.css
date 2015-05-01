@@ -1,7 +1,8 @@
 body {
     font-family: "Calibri", sans-serif
 }
-/* No borders in Internet Explorer, sorry...*/
+
+/* No funky borders in Internet Explorer, sorry...*/
 table {
     min-width: 550px;
     border-collapse: collapse;
