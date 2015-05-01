@@ -1,1 +1,1 @@
-### Telerik Software Academy 2015
+##### Telerik Software Academy 2015
