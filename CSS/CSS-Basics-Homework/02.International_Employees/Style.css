@@ -1,0 +1,41 @@
+body {
+    font-family: "Calibri", sans-serif
+}
+
+table {
+    min-width: 550px;
+    border-collapse: collapse;
+    border-bottom: 1px solid darkgrey
+}
+
+th {
+    background-color: #59BB08;
+    color: white;
+    padding: 4px;
+    text-align: left;
+    font-weight: lighter;
+    border-bottom: 1px solid darkgrey;
+    border-right: 1px solid darkgrey
+}
+
+td {
+    color: #545454;
+    padding: 5px;
+    border-right: 1px solid darkgrey
+}
+
+td:last-child {
+    width: 16%;
+    border-right: none
+}
+
+tr:nth-child(2n) {
+    background-color: #ECECD8
+}
+
+.flags {
+    width: 1.5em;
+    length: 1em;
+    vertical-align: middle
+}
+

@@ -1,0 +1,37 @@
+body {
+    background-color: #A9A9A9;
+    color: white
+}
+
+body > header h1, nav {
+    text-align: center
+}
+
+body > footer {
+    text-align: center
+}
+
+article > footer {
+    font-size: small
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.current {
+    background-color: #D3D3D3
+}
+
+nav li {
+    list-style: none
+}
+
+footer, p, p > a {
+    color: black
+}

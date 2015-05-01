@@ -1,0 +1,47 @@
+body {
+    background-color: #5A5A5A;
+    font-family: "Arial Narrow", "Arrow", sans-serif;
+    color: #ABACAC
+}
+
+header {
+    font-size: 1.4em;
+    font-family: "Tahoma";
+    line-height: 200%;
+    font-weight: 100
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 24px 13px;
+    margin: 0 -20px
+}
+
+td:first-of-type {
+    font-style: italic ;
+    color: #E2E8EC;
+    border-right-width: 30px;
+    vertical-align: top
+}
+
+#user-status {
+    color: #E30607;
+    font-weight: 700
+}
+
+#status {
+    color: #CF6928;
+    font-weight: 700
+}
+
+.circle {
+    border-radius: 50%;
+    width: 0.6em;
+    height: 0.6em;
+   border:1px solid #72B47B;
+    background-color:#72B47B
+}
+
+.user {
+    color: #F7EFA7
+}
