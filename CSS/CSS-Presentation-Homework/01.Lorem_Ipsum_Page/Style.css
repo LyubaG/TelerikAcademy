@@ -1,0 +1,15 @@
+body {
+    font-family: "Consolas", sans-serif;
+    color: #0094ff;
+    text-align: justify;
+}
+
+p:first-letter {
+    font-size: 250%;
+    font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
+}
+
+p:first-line {
+    line-height: 100%;
+    font-weight: bold;
+}
