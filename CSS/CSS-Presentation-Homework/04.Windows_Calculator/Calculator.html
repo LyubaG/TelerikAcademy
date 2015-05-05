@@ -7,31 +7,133 @@
 </head>
 <body>
 <main>
-    <button class="toolbar-btn">_</button>
-    <button class="toolbar-btn" id="max-btn">◻</button>
-    <button class="toolbar-btn" id="close-btn">x</button>
-    <header>
-        <img src="images/calc-icon.png" alt="caculator icon"/>  Calculator
-    </header>
+    <button type="button" id="close_win" onclick="alert('I am a fake calculator, sorry!')">
+        <img src="images/btn-x.png" alt="close"/>
+    </button>
+    <button type="button" id="maximize_win" disabled>
+        <img src="images/btn-max.png" alt="maximize"/>
+    </button>
+    <button type="button" id="minimize_win" onclick="alert('I am a fake calculator, sorry!')">
+        <img src="images/btn-min.png" alt="minimize"/>
+    </button>
+    <header><img src="images/calc-icon.png" alt="caculator icon"/>Calculator</header>
 
     <div id="calcWin">
         <nav>
             <ul id="menu">
-                <li>View</li>
-                <li>Edit</li>
-                <li>Help</li>
+                <a href="#"><li>View</li></a>
+                <a href="#"><li>Edit</li></a>
+                <a href="#"><li>Help</li></a>
             </ul>
-
         </nav>
-        <div id="numWin">
-            <div class="cells" id="result">aaa</div>
-            <div class="cells">bbb</div>
-            <div class="cells">ccc</div>
 
+        <div id="numWin">
+            <div id="invisible_box">
+                <div class="cells" id="result">8854455</div>
+                <div class="cells" id="binary">
+                    <p>0000  0000  0000  0000  0000  0000  0000  0000</p>
+                    <p class="grey">63                      47                  32</p>
+                    <p>0000  0000  1000  0111  0001  1011  1011  0111</p>
+                    <p class="grey">31                      15                   0</p>
+                </div>
+                <table>
+                    <tr>
+                        <td colspan="2" rowspan="3" class="lists noformat nohover">
+                            <label for="hex-btn" class="css-label">
+                                <input type="radio" class="css-checkbox" name="numsys" value="hex" id="hex-btn" checked />
+                                Hex
+                            </label>
+                            <label for="dec-btn">
+                                <input type="radio" name="numsys" value="dec" id="dec-btn" />
+                                Dec
+                            </label>
+                            <label for="oct-btn">
+                                <input type="radio" name="numsys" value="oct" id="oct-btn" />
+                                Oct
+                            </label>
+                            <label for="bin-btn">
+                                <input type="radio" name="numsys" value="bin" id="bin-btn" />
+                                Bin
+                            </label>
+                        </td>
+                        <td class="noformat nohover"> </td>
+                        <td class="grad-fill">Mod</td>
+                        <td class="noformat">A</td>
+                        <td>MC</td>
+                        <td>MR</td>
+                        <td>MS</td>
+                        <td>M+</td>
+                        <td>M-</td>
+                    </tr>
+                    <tr>
+                        <td class="grad-fill">(</td>
+                        <td class="grad-fill">)</td>
+                        <td class="noformat">B</td>
+                        <td class="grad-fill">←</td>
+                        <td class="grad-fill">CE</td>
+                        <td class="grad-fill">C</td>
+                        <td class="grad-fill">±</td>
+                        <td class="noformat">√</td>
+                    </tr>
+                    <tr>
+                        <td class="grad-fill">RoL</td>
+                        <td class="grad-fill">RoR</td>
+                        <td class="noformat">C</td>
+                        <td class="highlight">7</td>
+                        <td class="highlight">8</td>
+                        <td class="highlight">9</td>
+                        <td class="grad-fill">/</td>
+                        <td class="noformat">%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3" class="lists noformat nohover">
+                            <label for="qword" class="css-label">
+                                <input type="radio" class="css-checkbox" name="w-display" value="q-word" id="qword" checked />  Qword
+                            </label>
+                            <label for="dword">
+                                <input type="radio" name="w-display" value="d-word" id="dword" />
+                                Dword
+                            </label>
+                            <label for="word">
+                                <input type="radio" name="w-display" value="w-word" id="word" />
+                                Word
+                            </label>
+                            <label for="byte">
+                                <input type="radio" name="w-display" value="byte" id="byte" />
+                                Byte
+                            </label>
+                        </td>
+                        <td class="grad-fill">Or</td>
+                        <td class="grad-fill">Xor</td>
+                        <td class="noformat">D</td>
+                        <td class="highlight">4</td>
+                        <td class="highlight">5</td>
+                        <td class="highlight">6</td>
+                        <td class="grad-fill">*</td>
+                        <td class="noformat">1/&#x1d465;</td>
+                    </tr>
+                    <tr>
+                        <td class="grad-fill">Lsh</td>
+                        <td class="grad-fill">Rsh</td>
+                        <td class="noformat">E</td>
+                        <td class="highlight">1</td>
+                        <td class="highlight">2</td>
+                        <td class="highlight">3</td>
+                        <td class="grad-fill">-</td>
+                        <td rowspan="2" class="grad-fill">=</td>
+                    </tr>
+                    <tr>
+                        <td class="grad-fill">Not</td>
+                        <td class="grad-fill">And</td>
+                        <td class="noformat">F</td>
+                        <td colspan="2" class="highlight">0</td>
+                        <td class="noformat">.</td>
+                        <td class="grad-fill">+</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-
-
 </main>
 </body>
 </html>
