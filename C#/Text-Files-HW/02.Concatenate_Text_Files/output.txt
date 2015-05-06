@@ -1,0 +1,39 @@
+//Write a program that concatenates two text files into another text file.
+
+using System;
+using System.IO;
+
+
+class JoinFiles
+{
+    static void WriteToFile(StreamWriter finalFile, string text)
+    {
+        using (StreamReader input = new StreamReader(text))
+            for (string line; (line = input.ReadLine()) != null; )
+                finalFile.WriteLine(line);
+    }
+    static void Main()
+    {
+        string[] files = { "../../JoinFiles.cs", "../../newfile.txt" };
+        using (StreamWriter output = new StreamWriter("../../output.txt"))
+            foreach (string file in files)
+            {
+                WriteToFile(output, file);
+            }
+        Console.WriteLine("Done! Check the file :).");
+
+    }
+}
+
+
+,---------. .-------.       ____      .---.       ____      .---.       ____     
+\          \|  _ _   \    .'  __ `.   | ,_|     .'  __ `.   | ,_|     .'  __ `.  
+ `--.  ,---'| ( ' )  |   /   '  \  \,-./  )    /   '  \  \,-./  )    /   '  \  \ 
+    |   \   |(_ o _) /   |___|  /  |\  '_ '`)  |___|  /  |\  '_ '`)  |___|  /  | 
+    :_ _:   | (_,_).' __    _.-`   | > (_)  )     _.-`   | > (_)  )     _.-`   | 
+    (_I_)   |  |\ \  |  |.'   _    |(  .  .-'  .'   _    |(  .  .-'  .'   _    | 
+   (_(=)_)  |  | \ `'   /|  _( )_  | `-'`-'|___|  _( )_  | `-'`-'|___|  _( )_  | 
+    (_I_)   |  |  \    / \ (_ o _) /  |        \ (_ o _) /  |        \ (_ o _) / 
+    '---'   ''-'   `'-'   '.(_,_).'   `--------`'.(_,_).'   `--------`'.(_,_).'  
+                                                                                 
+

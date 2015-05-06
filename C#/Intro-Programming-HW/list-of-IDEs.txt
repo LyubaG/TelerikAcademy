@@ -1,0 +1,14 @@
+Eclipse:
+Works with C, C++, Python, Perl, PHP, Java, Ruby and more. It is the free and open-source editor upon which many development frameworks are based. It is one of the granddaddies in its field and comes highly recommended by many a professionals. Eclipse began as a Java development environment and has greatly expanded through a system of lightweight plugins.
+
+NetBeans:
+Just like Eclipse, it is free, and while especially recommended for Java, it also works with JavaScript, PHP, Python, Ruby, C, C++ and others. It is also open-source, supports tons of languages with more plugins coming all the time, and is incredibly simple to install and use, even for a beginner.
+
+BlackAdder:
+This IDE is designed for Python and Ruby developers creating apps for Windows and Linux. It includes a text editor as well as a GUI designer that uses pyQT and QT Designer. The makers of BlackAdder allow you to test drive the IDE in a limited demo version.
+
+Aptana Studio:
+Aptana is well suited for web and scripting languages. PHP, Ruby on Rails, and Python are supported as well as the likes of Adobe AIR. Even the studio itself is available as a plugin for Eclipse if you prefer the way Aptana handles your work and want to combine it with a more comprehensive IDE. Aptana Studio is free, under the GNU license.
+
+CodeRun:
+Web-based, free. Works with ASP.NET, PHP, Ajax, C#, JavaScript, CSS, HTML and more. It works in Chrome, Firefox, Safari and even Internet Explorer. Like the more robust multi-language IDEs, CodeRun supports Visual Studio projects and .NET languages. Your code is sharable via hyperlinks, and there are built-in social sharing tools, should you want to tweet your code :)
