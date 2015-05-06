@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+<form name="registration" method="post" action="http://www.likeateam.com/wp-content/uploads/2012/04/grumpy1.jpg">
+	<fieldset>
+		<legend>Enter member details: </legend>
+		<label for="member">Member name: </label>
+		<input id="member"
+			   type="text" maxlength="150"
+			   required="required"
+			   autofocus="autofocus"/> *req<br>
+		<label for="email">E-mail: </label>
+		<input id="email"
+			   type="email" maxlength="70"
+			   required="required"
+			   pattern="[^@]*@[^ @].[^@]" /> *req<br>
+		<label for="school">School: </label>
+		<input id="school"
+			   type="text"
+			   required="required" /> *req<br>
+		<input type="image" src="submit.jpg" width="80" alt="Register" name="submitBtn"/>
+	</fieldset>
+</form>
+</body>
+</html>

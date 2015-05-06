@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Frame</title>
+	<style type="text/css">
+		table
+		{
+			text-shadow: 1px 3px 3px #99FFCC;
+			background:#A3A3FF
+		}
+		td
+		{
+			font-family: "Calibri", sans-serif;
+			color:#008A00;
+			font-size:large;
+			font-weight:900;
+			border:1px solid #4C4C80;
+			background:#E0E0FF
+		}
+		button
+		{
+			font-family: "Calibri", sans-serif;
+			color:#008A00;
+			font-size:large;
+			font-weight:900;
+			text-shadow: 1px 2px 5px #99FFCC;
+			background:#B2B2FF;
+			border:1px solid #008A00;
+			border-radius:8px;
+			box-shadow:inset 0 1px 0 0 #dcecfb;
+		}
+		button:hover
+		{
+			background-color: #94FFDB;
+		}
+		body { font:16px Calibri }
+	</style>
+</head>
+
+<body>
+<table cellspacing="7" cellpadding="10">
+	<tr>
+		<td colspan="4">
+			<form name="result" method="get" action="calculate.php">
+			<input id="calculation" type="text" align="right"/>
+		</form></td>
+	</tr>
+	<tr align="center">
+		<td><button type="button" name="1">1</button></td>
+		<td><button type="button" name="2">2</button></td>
+		<td><button type="button" name="3">3</button></td>
+		<td><button type="button" name="addition">+</button></td>
+	</tr>
+	<tr align="center">
+		<td><button type="button" name="4">4</button></td>
+		<td><button type="button" name="5">5</button></td>
+		<td><button type="button" name="6">6</button></td>
+		<td><button type="button" name="subtraction">-</button></td>
+	</tr>
+	<tr align="center">
+		<td><button type="button" name="7">7</button></td>
+		<td><button type="button" name="8">8</button></td>
+		<td><button type="button" name="9">9</button></td>
+		<td><button type="button" name="multiplication">*</button></td>
+	</tr>
+	<tr align="center">
+		<td colspan="2"><button type="button" name="zero">0</button></td>
+		<td><button type="button" name="decimalPt">.</button></td>
+		<td><button type="button" name="division">/</button></td>
+	</tr>
+</table>
+</body>
+</html>
