@@ -1,0 +1,254 @@
+body,
+header,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+label,
+p,
+fieldset,
+nav,
+ul,
+li,
+a,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div,
+h1,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+body,
+section,
+nav,
+article,
+aside {
+  display: block;
+}
+.clearfix,
+section,
+aside,
+#reg-form-container,
+#logo-container,
+.nav-list {
+  zoom: 1;
+}
+.clearfix:after,
+section:after,
+aside:after,
+#reg-form-container:after,
+#logo-container:after,
+.nav-list:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  background: #9317f2;
+  background: -moz-linear-gradient(top, #d4a2fa 0%, #9317f2 20%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4a2fa), color-stop(20%, #9317f2));
+  background: -webkit-linear-gradient(top, #d4a2fa 0%, #9317f2 20%);
+  background: -o-linear-gradient(top, #d4a2fa 0%, #9317f2 20%);
+  background: -ms-linear-gradient(top, #d4a2fa 0%, #9317f2 20%);
+  background: linear-gradient(to bottom, #d4a2fa 0%, #9317f2 20%);
+  font-family: Cambria, Garamond, serif;
+  font-size: 14px;
+  color: #fff;
+}
+header {
+  padding: 25px 15px 5px 15px;
+}
+header nav {
+  display: inline-block;
+  width: 75%;
+  margin: 20px;
+  padding: 12px;
+  border: 2px solid #52088a;
+  border-radius: 15px;
+}
+header nav ul.nav-list li {
+  float: left;
+  margin: 0;
+}
+header nav ul.nav-list li a {
+  padding: 0 10px 0 10px;
+  color: #fff;
+  font: 1.3rem normal Cambria, Garamond, serif;
+}
+header nav ul.nav-list li:hover .sub-nav-list {
+  display: block;
+}
+header nav ul.nav-list li:hover a {
+  color: #a3a3a3;
+}
+header nav ul.nav-list li.selected:hover a {
+  font-weight: 900;
+}
+header nav ul.nav-list.sub-nav-list {
+  position: absolute;
+  display: none;
+  background-color: #be74f7;
+  border-radius: 5px;
+}
+header nav ul.nav-list.sub-nav-list li {
+  float: none;
+  margin: 0 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #590897;
+}
+header nav ul.nav-list.sub-nav-list li:last-of-type {
+  border-bottom: none;
+}
+header nav ul.nav-list.sub-nav-list li a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+#logo-container {
+  float: left;
+  position: relative;
+}
+#reg-form-container {
+  float: right;
+  position: relative;
+  right: 5%;
+  top: 50%;
+}
+#reg-form-container button {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b968f7;
+  border: 2px solid #a53ef4;
+  border-style: outset;
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+#reg-form-container button:hover {
+  background-color: #9d2cf3;
+  border-style: inset;
+}
+#reg-form-container div {
+  text-align: right;
+}
+#reg-form-container div label {
+  width: 50px;
+  margin: 5px;
+}
+#reg-form-container div input {
+  width: 130px;
+  border: 1px solid #770bc9;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin: 5px;
+  background-color: #ab4af5;
+}
+section {
+  width: 75%;
+  float: left;
+  color: #fff;
+}
+section article {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #52088a;
+  border-radius: 15px;
+}
+section article header {
+  background: none;
+  padding: 5px;
+}
+section article header h1 {
+  font-size: 1.3rem;
+  padding: 0;
+}
+section article footer {
+  padding: 5px;
+}
+section article footer p {
+  font-size: 1.1rem;
+  text-align: right;
+  font-weight: normal;
+}
+section article footer p time {
+  font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+}
+section article footer p a {
+  color: #c98bf8;
+}
+aside {
+  float: right;
+  width: 20%;
+  margin: 20px;
+}
+aside >ul>li {
+  margin: 15px 0;
+  padding: 15px;
+  border: 2px solid #52088a;
+  border-radius: 5px;
+}
+aside >ul>li h2 {
+  font-size: 1.1rem;
+}
+aside >ul>li p {
+  margin: 10px 5px;
+  font-size: 14px;
+}
+aside >ul>li p a {
+  color: #a9a9a9;
+}
+aside >ul>li p strong {
+  color: #ccc;
+  font-weight: bold;
+  font-style: normal;
+}
+aside >ul>li p em {
+  color: #ccc;
+  font-weight: normal;
+  font-style: italic;
+}
+aside >ul>li ul {
+  margin: 10px 0px;
+}
+aside >ul>li ul li {
+  margin: 5px 0px 0px 10px;
+  background: url("images/li-dot.png") no-repeat;
+  background-position: 0 50%;
+  padding-left: 25px;
+}
+footer {
+  clear: both;
+  padding: 15px 0 25px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}

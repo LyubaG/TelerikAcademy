@@ -1,0 +1,196 @@
+schemeColor = #9317F2
+fonts = Cambria, Garamond, serif
+timeFont = Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace
+bodyFontSz = 14px
+bodyFontCol = white
+emphasisCol = #ccc
+mainBorderRad = 15px
+
+// reset
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em
+  margin 0
+  padding 0
+  border 0
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside
+  display block
+// end of reset
+
+// gradient mixin
+vertical-gradient(from-color, from-pos, to-color, to-pos)
+  background: to-color
+  background: -moz-linear-gradient(top,  from-color from-pos, to-color to-pos)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(from-pos,from-color), color-stop(to-pos,to-color))
+  background: -webkit-linear-gradient(top,  from-color from-pos,to-color to-pos)
+  background: -o-linear-gradient(top,  from-color from-pos,to-color to-pos)
+  background: -ms-linear-gradient(top, from-color from-pos,to-color to-pos)
+  background: linear-gradient(to bottom,  from-color from-pos,to-color to-pos)
+
+// clearfix - for extending
+.clearfix
+  zoom 1
+  &:after
+    display block
+    content ''
+    clear both
+    height 0
+    overflow hidden
+    width 100%
+
+a
+  text-decoration none
+  &:hover
+    text-decoration underline
+ul
+  list-style-type none
+
+body
+  vertical-gradient(lighten(schemeColor, 60%), 0%, schemeColor, 20%)
+  font-family fonts
+  font-size bodyFontSz
+  color bodyFontCol
+
+header
+  padding 25px 15px 5px 15px
+  nav
+    display inline-block
+    width 75%
+    margin 20px
+    padding 12px
+    border 2px solid darken(schemeColor, 45%)
+    border-radius mainBorderRad
+    ul.nav-list
+      li
+        float left
+        margin 0
+        a
+          padding 0 10px 0 10px
+          color white
+          font 1.3rem normal fonts
+        &:hover
+          .sub-nav-list
+            display block
+          a
+            color darken(emphasisCol, 20%)
+        &.selected:hover
+          a
+            font-weight 900
+      &.sub-nav-list
+        position absolute
+        display none
+        background-color lighten(schemeColor, 40%)
+        border-radius 5px
+        li
+          float none
+          margin 0 15px
+          padding 10px 0
+          border-bottom 1px solid darken(schemeColor, 40%)
+          &:last-of-type
+            border-bottom none
+          a
+            font-size 1.1rem
+            color bodyFontCol
+
+#logo-container
+  float left
+  position relative
+
+#reg-form-container
+  float right
+  position relative
+  right 5%
+  top 50%
+  button
+    margin-left auto
+    margin-right auto
+    font-weight bold
+    color bodyFontCol
+    background-color lighten(schemeColor, 35%)
+    border 2px solid lighten(schemeColor, 17%)
+    border-style outset
+    border-radius 10px
+    padding 5px 8px
+    &:hover
+      background-color lighten(schemeColor, 9%)
+      border-style inset
+  div
+    text-align right
+    label
+      width 50px
+      margin 5px
+    input
+      width 130px
+      border 1px solid darken(schemeColor,20%)
+      border-radius 10px
+      padding 2px 5px
+      margin 5px
+      background-color lighten(schemeColor, 22%)
+
+section
+  width 75%
+  float left
+  color white
+  article
+    margin 20px
+    padding 20px
+    border 2px solid darken(schemeColor, 45%)
+    border-radius mainBorderRad
+    header
+      background none
+      padding 5px
+      h1
+        font-size 1.3rem
+        padding 0
+    footer
+      padding 5px
+      p
+        font-size 1.1rem
+        text-align right
+        font-weight normal
+        time
+          font-family timeFont
+        a
+          color lighten(schemeColor, 50%)
+
+aside
+  float right
+  width 20%
+  margin 20px
+  >ul>li
+    margin 15px 0
+    padding 15px
+    border 2px solid darken(schemeColor, 45%)
+    border-radius 5px
+    h2
+      font-size 1.1rem
+    p
+      margin 10px 5px
+      font-size bodyFontSz
+      a
+        color darken(emphasisCol, 17%)
+      strong
+        color emphasisCol
+        font-weight bold
+        font-style normal
+      em
+        color emphasisCol
+        font-weight normal
+        font-style italic
+    ul
+      margin 10px 0px
+      li
+        margin 5px 0px 0px 10px
+        background url(images/li-dot.png) no-repeat
+        background-position 0 50%
+        padding-left 25px
+
+section, aside, #reg-form-container, #logo-container, .nav-list
+  @extend .clearfix
+
+footer
+  clear both
+  padding 15px 0 25px 0
+  text-align center
+  p
+    font-size 1.2rem
+    font-weight 900

@@ -1,0 +1,40 @@
+@import 'reset.styl'
+
+thumbSide = 120px
+space = 7px
+
+global-reset()
+
+#wrapper
+  border 1px dotted #ccc
+  border-radius 5px
+  margin space
+
+.animals
+  list-style-type none
+  li
+    display inline-block
+    height thumbSide
+    width thumbSide
+    overflow hidden
+    margin space
+    position relative
+    img
+      width auto
+      height 100%
+      position absolute
+      left -25%
+
+#full-sized
+  img
+    display none
+  :target
+    display block
+    position absolute
+    left space*2
+    width 550px
+    height auto
+
+
+
+
