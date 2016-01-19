@@ -1,0 +1,25 @@
+extends ../shared/layout
+block main-content
+    form(method="post")
+        label(for="title") Title
+        input(id="title" class="form-control" type="text" name="title" placeholder="Title")
+        br
+        label(for="description") Description
+        input(id="description" class="form-control" type="text" name="description" placeholder="Description")
+        br
+        label(for="category") Category
+        select(id="category" class="form-control" name="category")
+            option(value="") Thoughtfully  Choose Category
+            each category in categories
+                option(value="#{category}") #{category}
+        br
+        label(for="privacy") Public or Private?
+        select(id="privacy" class="form-control" name="privacy")
+            each opt in privacy
+                option(value="#{opt}") #{opt}
+        br
+        br
+        label(for="videoUrl") Add a video URL
+        input(id="videoUrl" class="form-control" type="text" name="videoUrl" placeholder="Video URL")
+        br
+        input(type="submit" class="btn btn-md" value="Create")

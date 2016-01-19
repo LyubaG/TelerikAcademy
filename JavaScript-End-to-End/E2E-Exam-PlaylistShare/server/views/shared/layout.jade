@@ -1,0 +1,41 @@
+doctype
+html
+    head
+        title Share-a-Tube
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/css/site.css")
+    body
+        header.nav
+        .container
+            .navbar-header
+                a.navbar-brand(href="/") Share-a-Tube
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href="/") Home
+                    if (currentUser)
+                        li
+                            a(href="/playlists/create") Create Playlist
+                        li
+                            a(href="/playlists/active") Available Playlists
+                        li
+                            a(href="/profile") #{currentUser.username}
+                        li
+                            a(href="/logout") Logout
+                    if (!currentUser)
+                        li
+                            a(href="/register") Register
+                        li
+                            a(href="/login") Login
+
+        .container
+            if (errorMessage)
+                .alert.alert-danger #{errorMessage}
+
+            block main-content
+
+        footer
+            p.text-center
+                | &copy; The Exam Fairy of 2016
+
+        include scripts

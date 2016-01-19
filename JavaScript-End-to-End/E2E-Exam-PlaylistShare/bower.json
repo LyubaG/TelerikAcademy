@@ -1,0 +1,13 @@
+{
+  "name": "E2E-Exam",
+  "version": "0.0.1",
+  "authors": [
+    "Baba Meca"
+  ],
+  "description": "God help me",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "toastr": "~2.1.2"
+  }
+}

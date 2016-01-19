@@ -1,0 +1,14 @@
+extends ../index
+block list-content
+    .container.jumbotron Ta-Daa!
+        .row
+            .col-md-4.col-md-offset-1
+                br
+                table.table-bordered.table
+                    tr
+                        th Title
+                        th Rating
+                    each playlist in data.playlists
+                        tr
+                            td #{playlist.title}
+                            td #{playlist.rating}

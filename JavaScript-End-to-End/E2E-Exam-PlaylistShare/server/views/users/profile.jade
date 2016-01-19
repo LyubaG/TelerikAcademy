@@ -1,0 +1,30 @@
+extends ../shared/layout
+block main-content
+    h3 Hi, #{currentUser.username}, you can update your profile here
+    img.img-circle(src=currentUser.image, height="15%", width="15%")
+    form(method="post")
+        label(for="email") E-mail
+        input(id="email" class="form-control" type="email" name="email" placeholder="E-mail")
+        br
+        label(for="password") Password
+        input(id="password" class="form-control" type="password" name="password" placeholder="Password")
+        br
+        label(for="confirm-password") Confirm Password
+        input(id="confirm-password" class="form-control" type="password" name="confirmPassword" placeholder="Confirm password")
+        br
+        label(for="first-name") First Name
+        input(id="first-name" class="form-control" type="text" name="firstName" placeholder="First Name")
+        br
+        label(for="last-name") Last Name
+        input(id="last-name" class="form-control" type="text" name="lastName" placeholder="Last Name")
+        br
+        label(for="facebook") Link to Facebook Profile (optional)
+        input(id="facebook" class="form-control" type="text" name="facebook" placeholder="Facebook Link")
+        br
+        label(for="youtube") Link to YouTube Channel (optional)
+        input(id="youtube" class="form-control" type="text" name="youtube" placeholder="Youtube Link")
+        br
+        label(for="image") Link to Profile Image (optional)
+        input(id="image" class="form-control" type="text" name="image" placeholder="Image Link")
+        br
+        input(type="submit" class="btn btn-md" value="Update")

@@ -1,0 +1,43 @@
+extends ../shared/layout
+block main-content
+    .container
+        .row
+            .col-md-8.col-md-offset-1
+                h1.text-center Currently Available Playlists
+                br
+                table.table-bordered.table
+                    tr
+                        th Title
+                        th Creator
+                        th Creation Date
+                        th Rating
+                        th View Details
+                        th Rate
+                    each playlist in data.playlists
+                        tr
+                            td #{playlist.title}
+                            td #{playlist.creator}
+                            td #{(playlist.creationDate)}
+                            td #{playlist.rating}
+                            td
+                                a.btn.btn-md.btn-primary(href="/playlists/details") View
+                            td
+                                //label(for="rating")
+                                select(id="rating" class="form-control" name="rating")
+                                    option(value="") Rate
+                                    each num in [1,2,3,4,5]
+                                        option(value="#{num}") #{num}
+                br
+                ul.pagination.pagination-sm
+                    - for(var i = 0; i < data.total / data.pageSize; i++)
+                    //li.disabled
+                    //    a(href="#{i - 1}") <<
+                    //li.active
+                    //    a(href="#")1
+                    li
+                        a.btn.btn-lf.btn-primary(href="/playlists/active?page=#{i}&pageSize=#{data.pageSize}") #{i-1}
+                    //li
+                    //    a(href="#{i+1}") >>
+
+
+

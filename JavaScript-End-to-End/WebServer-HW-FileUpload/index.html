@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Качи ме - Simple File Upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h3>Welcome to the <strong>very simple</strong> file upload site.
+        <br/>Click below to proceed or download a file, or stay on to look at the cat.</h3>
+    <a class="btn btn-default" href="/upload">To the file upload >></a>
+
+    <div class="form-inline"><input class="form-control center-block" type="text" id="id"
+                                    placeholder="Enter file identifier"
+                                    style="width:350px">
+        <button class="btn btn-default"
+                onclick="window.location += '?id=' + document.getElementById('id').value">
+            Download
+        </button>
+    </div>
+    <br/>
+    <!--TODO load local image, serve static CSS etc.
+    <img src="./public/grumpy.jpg" alt=""/>-->
+    <img src="http://media4.popsugar-assets.com/files/2014/08/08/878/n/1922507/caef16ec354ca23b_thumb_temp_cover_file32304521407524949.xxxlarge/i/Funny-Cat-GIFs.jpg"
+         class="img-responsive img-circle center-block" alt="Responsive cat image">
+
+</div>
+</body>
+</html>

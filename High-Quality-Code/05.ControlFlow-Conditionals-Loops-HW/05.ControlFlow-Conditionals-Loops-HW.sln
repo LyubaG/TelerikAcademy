@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking", "Cooking\Cooking.csproj", "{E5AACFD0-E35D-4C1F-ACBC-09AFC1270F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalStatements", "ConditionalStatements\ConditionalStatements.csproj", "{04CB37B5-3336-4000-9390-1EEFA8EB719F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loop", "Loop\Loop.csproj", "{C40DD3BE-145B-418C-8143-9611759F98F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRefactoring-Printing", "ExamRefactoring-Printing\ExamRefactoring-Printing.csproj", "{04B5C94D-F595-41F6-B3F9-F9DB7CABADDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRefactoring-TextToNum", "ExamRefactoring-TextToNum\ExamRefactoring-TextToNum.csproj", "{14348DF8-E701-4852-813D-86AE801695A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRefactoring-SaddyKopper", "ExamRefactoring-SaddyKopper\ExamRefactoring-SaddyKopper.csproj", "{75E5EC2F-0CF0-4C7A-A994-D36B81C53172}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5AACFD0-E35D-4C1F-ACBC-09AFC1270F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5AACFD0-E35D-4C1F-ACBC-09AFC1270F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5AACFD0-E35D-4C1F-ACBC-09AFC1270F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5AACFD0-E35D-4C1F-ACBC-09AFC1270F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CB37B5-3336-4000-9390-1EEFA8EB719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CB37B5-3336-4000-9390-1EEFA8EB719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CB37B5-3336-4000-9390-1EEFA8EB719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CB37B5-3336-4000-9390-1EEFA8EB719F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40DD3BE-145B-418C-8143-9611759F98F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40DD3BE-145B-418C-8143-9611759F98F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40DD3BE-145B-418C-8143-9611759F98F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40DD3BE-145B-418C-8143-9611759F98F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B5C94D-F595-41F6-B3F9-F9DB7CABADDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B5C94D-F595-41F6-B3F9-F9DB7CABADDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B5C94D-F595-41F6-B3F9-F9DB7CABADDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B5C94D-F595-41F6-B3F9-F9DB7CABADDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14348DF8-E701-4852-813D-86AE801695A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14348DF8-E701-4852-813D-86AE801695A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14348DF8-E701-4852-813D-86AE801695A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14348DF8-E701-4852-813D-86AE801695A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E5EC2F-0CF0-4C7A-A994-D36B81C53172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E5EC2F-0CF0-4C7A-A994-D36B81C53172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E5EC2F-0CF0-4C7A-A994-D36B81C53172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E5EC2F-0CF0-4C7A-A994-D36B81C53172}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
